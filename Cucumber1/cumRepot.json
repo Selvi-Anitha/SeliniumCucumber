@@ -1,0 +1,89 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2019-06-26T07:10:09.114Z",
+        "line": 5,
+        "name": "ChangePassword",
+        "description": "",
+        "id": "change;changepassword",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2159500,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I enter password as \"sham@123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"sham@123\"",
+                  "offset": 20
+                }
+              ],
+              "location": "changeSetup.i_enter_password_as(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 919400,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I enter confirm password as \"sham@123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"sham@123\"",
+                  "offset": 28
+                }
+              ],
+              "location": "changeSetup.i_enter_confirm_password_as(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 195600,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "The password is changed",
+            "match": {
+              "location": "changeSetup.the_password_is_changed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@tag"
+          },
+          {
+            "name": "@tag1"
+          }
+        ]
+      }
+    ],
+    "name": "Change",
+    "description": "",
+    "id": "change",
+    "keyword": "Feature",
+    "uri": "classpath:pack2/ChangePassword.feature",
+    "tags": [
+      {
+        "name": "@tag",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
